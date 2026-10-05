@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshaya Shetty | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f8fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        nav h2 {
+            color: #4f46e5;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #4f46e5;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #eef2ff, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #4f46e5;
+        }
+
+        .hero h3 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #4f46e5;
+            color: white;
+        }
+
+        .secondary {
+            border: 2px solid #4f46e5;
+            color: #4f46e5;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #222;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .skill {
+            background: white;
+            padding: 14px 22px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            font-weight: 500;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #4f46e5;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        .card ul {
+            margin: 15px 0 0 20px;
+            color: #555;
+        }
+
+        .education-item {
+            background: white;
+            max-width: 850px;
+            margin: 15px auto;
+            padding: 20px;
+            border-left: 5px solid #4f46e5;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+        }
+
+        .education-item h3 {
+            color: #4f46e5;
+        }
+
+        .contact {
+            text-align: center;
+            background: #eef2ff;
+        }
+
+        .contact p {
+            margin: 10px;
+        }
+
+        .contact a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Akshaya</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internship">Internship</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Hi, I'm <span>Akshaya Shetty</span></h1>
+
+            <h3>B.Tech Student | Aspiring Software Developer</h3>
+
+            <p>
+                I am a B.Tech student with basic knowledge of Core Java
+                and an interest in programming. I enjoy learning new
+                technologies, solving problems, and gaining practical
+                experience through projects and internships.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn primary">View My Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a B.Tech student pursuing Computer Science and
+                Information Technology. I have basic knowledge of Core
+                Java, Python, and MySQL and I am continuously improving
+                my programming and problem-solving skills.
+            </p>
+
+            <br>
+
+            <p>
+                I am a quick learner and interested in gaining practical
+                experience by working on projects and learning new
+                technologies.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">Core Java</div>
+            <div class="skill">Python Basics</div>
+            <div class="skill">MySQL Basics</div>
+            <div class="skill">OOP Basics</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Basic Data Structures</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">GitHub</div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>ScholarMind</h3>
+
+                <p>
+                    <strong>AI-Based Multi-Agent Research Assistant</strong>
+                </p>
+
+                <p>
+                    Built an AI-based research assistant that helps
+                    researchers find, summarize, compare, and understand
+                    research papers.
+                </p>
+
+                <ul>
+                    <li>Paper searching</li>
+                    <li>Paper summarization</li>
+                    <li>Citation generation</li>
+                    <li>Paper comparison</li>
+                    <li>Research gap identification</li>
+                </ul>
+
+                <br>
+
+                <a href="https://github.com/Akshaya97-katta/ScholarMind-Multi-Agent-Research-Assistant"
+                   target="_blank"
+                   class="btn primary">
+                    View on GitHub
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Internship -->
+    <section id="internship">
+        <h2 class="section-title">Internship</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Full Stack Java Developer Intern</h3>
+
+                <p>
+                    <strong>SoftNexis</strong>
+                </p>
+
+                <p>
+                    May 2026 – June 2026 | Remote
+                </p>
+
+                <br>
+
+                <ul>
+                    <li>
+                        Gained practical exposure to Java, HTML, CSS,
+                        and JavaScript through internship tasks.
+                    </li>
+
+                    <li>
+                        Learned basic concepts of backend and web
+                        application development.
+                    </li>
+
+                    <li>
+                        Worked on assigned development and testing tasks.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-item">
+            <h3>Malla Reddy Engineering College for Women</h3>
+            <p>B.Tech – Computer Science and Information Technology</p>
+            <p>2023 – 2027</p>
+            <p><strong>CGPA: 8.95/10</strong></p>
+        </div>
+
+        <div class="education-item">
+            <h3>Narayana Junior College</h3>
+            <p>Class XII – MPC</p>
+            <p>2021 – 2023</p>
+            <p><strong>Percentage: 88%</strong></p>
+        </div>
+
+        <div class="education-item">
+            <h3>Narayana High School</h3>
+            <p>Class X – SSC</p>
+            <p>2018 – 2021</p>
+            <p><strong>CGPA: 10/10</strong></p>
+        </div>
+    </section>
+
+
+    <!-- Certifications -->
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Cisco Networking Academy</h3>
+                <p>C Programming</p>
+                <p>Python</p>
+            </div>
+
+            <div class="card">
+                <h3>Initial Skill India</h3>
+                <p>AI For All</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Strengths -->
+    <section>
+        <h2 class="section-title">Strengths</h2>
+
+        <div class="skills-container">
+            <div class="skill">Quick Learner</div>
+            <div class="skill">Teamwork</div>
+            <div class="skill">Willing to Learn</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:kattaakshaya97@gmail.com">
+                kattaakshaya97@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/Akshaya97-katta" target="_blank">
+                Akshaya97-katta
+            </a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            katta-akshaya-shetty
+        </p>
+
+        <p>
+            <strong>Phone:</strong> +91-9121861812
+        </p>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Akshaya Shetty. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
